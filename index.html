@@ -1,0 +1,105 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="css/owl.carousel.min.css">
+    <link rel="stylesheet" href="css/owl.theme.default.min.css">
+    <link rel="stylesheet" href="css/bootstrap.min.css">
+    <link rel="stylesheet" href="css/style.css">
+
+</head>
+
+<body>
+
+    <div class="owl-carousel owl-theme">
+        <div class="item card">
+          <img class="pforile-picture" src="img/b.jpg" alt="">
+                <h3 class="title">Name</h3>
+                <p class="sub-title">Lorem, ipsum.</p>
+            
+        </div> 
+        <div class="item card">
+          <img class="pforile-picture" src="img/b.jpg" alt="">
+                <h3 class="title">Name</h3>
+                <p class="sub-title">Lorem, ipsum.</p>
+            
+        </div> 
+        <div class="item card">
+          <img class="pforile-picture" src="img/b.jpg" alt="">
+                <h3 class="title">Name</h3>
+                <p class="sub-title">Lorem, ipsum.</p>
+            
+        </div> 
+        <div class="item card">
+          <img class="pforile-picture" src="img/b.jpg" alt="">
+                <h3 class="title">Name</h3>
+                <p class="sub-title">Lorem, ipsum.</p>
+            
+        </div> 
+        <div class="item card">
+          <img class="pforile-picture" src="img/b.jpg" alt="">
+                <h3 class="title">Name</h3>
+                <p class="sub-title">Lorem, ipsum.</p>
+            
+        </div> 
+        <div class="item card">
+          <img class="pforile-picture" src="img/b.jpg" alt="">
+                <h3 class="title">Name</h3>
+                <p class="sub-title">Lorem, ipsum.</p>
+            
+        </div> 
+        <div class="item card">
+          <img class="pforile-picture" src="img/b.jpg" alt="">
+                <h3 class="title">Name</h3>
+                <p class="sub-title">Lorem, ipsum.</p>
+            
+        </div> 
+       
+
+    </div>
+
+
+
+    <script src="js/jquery.js"></script>
+    <script src="js/owl.carousel.min.js"></script><!--jquecy link will be under others js file -->
+    <script>
+
+
+var owl = $('.owl-carousel');
+owl.owlCarousel({
+    items:4,
+    loop:true,
+    margin:10,
+    autoplay:true,
+    autoplayTimeout:1000,
+    autoplayHoverPause:true,
+    responsive:{
+        0:{
+            items:1
+        },
+        600:{
+            items:3
+        },
+        1000:{
+            items:5
+        }
+    }
+
+});
+$('.play').on('click',function(){
+    owl.trigger('play.owl.autoplay',[1000])
+})
+$('.stop').on('click',function(){
+    owl.trigger('stop.owl.autoplay')
+})
+        
+
+        
+    </script>
+
+</body>
+
+</html>
